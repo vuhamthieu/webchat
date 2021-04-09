@@ -49,6 +49,11 @@
 
     //prevent form from submitting
     return false;
+
+    //listen for incoming messages
+    firebase.database().ref("messages").on("child_added", function(snapshot){
+
+    })
   }
 </script>
 
